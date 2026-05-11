@@ -14,3 +14,16 @@ theme = "hugo-relearn"
     weight = 2
     label = "Русский"
     contentDir = "content/ru"
+
+[outputs]
+  home = ["html", "rss", "print", "search"]
+
+[[menu.shortcuts]]
+  name = "<i class='fab fa-youtube'></i> YouTube"
+  url = "https://www.youtube.com/@AnglersOS"
+  weight = 1
+
+[[menu.shortcuts]]
+  name = "<i class='fab fa-github'></i> GitHub"
+  url = "https://github.com/AnglersOS/anglersos-public/"
+  weight = 2
