@@ -15,6 +15,11 @@ theme = "hugo-relearn"
     label = "Русский"
     contentDir = "content/ru"
 
+[params]
+  themeVariant = "zen-dark"
+  showBreadcrumbs = true
+  custom_css = ["css/custom.css"]
+
 [outputs]
   home = ["html", "rss", "print", "search"]
 

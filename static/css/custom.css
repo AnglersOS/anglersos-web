@@ -1,0 +1,11 @@
+h1, h2, h3, h4, h5, h6, 
+#sidebar ul li span, 
+#sidebar ul li a {
+    text-transform: none !important;
+    letter-spacing: normal !important;
+}
+
+
+#sidebar ul li a, #sidebar ul li span {
+    font-weight: 500;
+}
