@@ -3,27 +3,40 @@ name: Deploy Hugo site to Pages
 on:
   push:
     branches: ["main"]
+  workflow_dispatch:
 
 permissions:
   contents: read
   pages: write
   id-token: write
 
+# Позволяет отменить текущую сборку, если вы сделали новый пуш
+concurrency:
+  group: "pages"
+  cancel-in-progress: true
+
 jobs:
   build:
     runs-on: ubuntu-latest
+    env:
+      FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
     steps:
       - name: Checkout
         uses: actions/checkout@v4
         with:
           submodules: recursive
+          fetch-depth: 0 # Нужно для корректной работы дат в Hugo
+
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v3
         with:
           hugo-version: 'latest'
           extended: true
+
       - name: Build
-        run: hugo --minify
+        # Добавляем baseURL явно на случай ошибок в конфиге
+        run: hugo --minify --baseURL "https://github.com/AnglersOS/anglersos-web/"
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
@@ -32,6 +45,8 @@ jobs:
   deploy:
     needs: build
     runs-on: ubuntu-latest
+    env:
+      FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
