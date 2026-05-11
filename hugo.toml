@@ -1,0 +1,16 @@
+baseURL = "https://github.com/AnglersOS/anglersos-web/"
+locale = "ru"
+title = "AnglersOS Documentation"
+theme = "hugo-relearn"
+
+[languages]
+  [languages.en]
+    title = "AnglersOS Docs"
+    weight = 1
+    label = "English"
+    contentDir = "content/en"
+  [languages.ru]
+    title = "Документация AnglersOS"
+    weight = 2
+    label = "Русский"
+    contentDir = "content/ru"
