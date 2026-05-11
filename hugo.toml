@@ -1,4 +1,4 @@
-baseURL = "https://github.io"
+baseURL = "https://anglersos.github.io/anglersos-web/"
 locale = "ru"
 title = "AnglersOS Documentation"
 theme = "hugo-relearn"
