@@ -35,7 +35,7 @@ jobs:
 
       - name: Build
         # Добавляем baseURL явно на случай ошибок в конфиге
-        run: hugo --minify --baseURL "https://github.com/AnglersOS/anglersos-web/"
+        run: hugo --minify
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
