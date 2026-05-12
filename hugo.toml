@@ -5,12 +5,12 @@ theme = "hugo-relearn"
 
 [languages]
   [languages.en]
-    title = "AnglersOS Docs"
+    title = "AnglersOS"
     weight = 1
     label = "English"
     contentDir = "content/en"
   [languages.ru]
-    title = "Документация AnglersOS"
+    title = "AnglersOS"
     weight = 2
     label = "Русский"
     contentDir = "content/ru"
@@ -32,3 +32,19 @@ theme = "hugo-relearn"
   name = "<i class='fab fa-github'></i> GitHub"
   url = "https://github.com/AnglersOS/anglersos-public/"
   weight = 2
+
+  [[languages.en.menu.shortcuts]]
+    name = "<i class='fas fa-mug-hot'></i> Buy me a coffee (PayPal)"
+    url = "https://www.donationalerts.com/r/anglersos" 
+    weight = 1
+  [[languages.en.menu.shortcuts]]
+    name = "<i class='fas fa-rocket'></i> Become a Member (Boosty)"
+    url = "https://boosty.to/anglersos/donate"
+    weight = 2
+
+
+  [[languages.ru.menu.shortcuts]]
+    name = "<i class='fas fa-ruble-sign'></i> Поддержать проект (Boosty)"
+    url = "https://boosty.to/anglersos/donate"
+    weight = 1
+
