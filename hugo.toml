@@ -2,23 +2,24 @@ baseURL = "https://anglersos.github.io/anglersos-web/"
 locale = "ru"
 title = "AnglersOS Documentation"
 theme = "hugo-relearn"
+defaultContentLanguage = "ru"
 
 [languages]
-  [languages.en]
-    title = "AnglersOS"
-    weight = 1
-    label = "English"
-    contentDir = "content/en"
   [languages.ru]
     title = "AnglersOS"
-    weight = 2
+    weight = 1
     label = "Русский"
-    contentDir = "content/ru"
+  [languages.en]
+    title = "AnglersOS"
+    weight = 2
+    label = "English"
+
 
 [params]
   themeVariant = "zen-dark"
   showBreadcrumbs = true
   custom_css = ["css/custom.css"]
+  favicon = "images/favicon.png"
 
 [outputs]
   home = ["html", "rss", "print", "search"]
