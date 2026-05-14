@@ -32,6 +32,6 @@ This project is currently in active development. Follow our [YouTube channel](ht
 *   **Mobile App:** Cross-platform control via Bluetooth (Android and iOS).
 
 ### ⚖️ License
-This project is licensed under **CC BY-NC-SA 4.0**.
+This project is licensed under **CC BY-NC-SA 4.0** with a strict liability disclaimer. 
 *   **Personal use:** Free to build, modify, and share.
 *   **Commercial use:** Requires a separate license. Contact: [dev.anglersos@gmail.com](mailto:dev.anglersos@gmail.com)

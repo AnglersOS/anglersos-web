@@ -9,18 +9,19 @@ defaultContentLanguage = "ru"
     title = "AnglersOS"
     weight = 1
     label = "Русский"
+
   [languages.en]
     title = "AnglersOS"
     weight = 2
     label = "English"
-
 
 [params]
   themeVariant = "zen-dark"
   showBreadcrumbs = true
   custom_css = ["css/custom.css"]
   favicon = "images/favicon.png"
-
+  editURL = "https://github.com/AnglersOS/anglersos-web/blob/main/content/"
+  
 [outputs]
   home = ["html", "rss", "print", "search"]
 
@@ -49,3 +50,5 @@ defaultContentLanguage = "ru"
     url = "https://boosty.to/anglersos/donate"
     weight = 1
 
+
+  
